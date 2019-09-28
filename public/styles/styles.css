@@ -1,3 +1,14 @@
 .list-group-item {
   line-height: 2.5;
 }
+#submit {
+  color: forestgreen;
+  background-color: bisque;
+}
+.col-8 {
+background-color: coral;
+}
+.form-group {
+  font-size: 20;
+  color: aqua;
+}
