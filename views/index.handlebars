@@ -15,6 +15,7 @@
           </div>
           <button id="submit" class="btn btn-primary float-right">Submit</button>
         </form>
+        {{!-- Facebook  Begins --}}
 <fb:login-button 
   scope="public_profile,email"
   onlogin="checkLoginState();">
@@ -41,6 +42,12 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=454198018520438&autoLogAppEvents=1"></script>
+<div class="fb-like" data-href="https://barbiedollxo.github.io/Project2/" data-width="200" data-layout="box_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>      
+      {{!-- End Facebook Stuff --}}
+      
+      
       </div>
     </div>
   </div>
@@ -48,5 +55,3 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
-
-<div></div>
