@@ -2,54 +2,64 @@
   <div class="container">
     <div class="row">
       <div class="col-8 offset-2">
-        <h1>{{msg}}</h1>
-        <h2>This is our Home Page!</h2>
+        {{!-- <h1>{{msg}}</h1> --}}
+        <h1>Have You Come To Challenge Me!? </h1>
         <form class="clearfix mb-4" action="POST">
           <div class="form-group">
-            <label for="example-text">Example Text</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
+            <label for="example-text">Competitor's Name</label>
+            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter User Name">
           </div>
           <div class="form-group">
-            <label for="example-description">Example Description</label>
-            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea>
+            <label for="example-description"><h2>Choose Your Challenge</h2></label>
+            
           </div>
-          <button id="submit" class="btn btn-primary float-right">Submit</button>
+          <button id="submit" class="btn btn-primary float-left">Gaming</button>
+          <button id="submit" class="btn btn-primary float-left">Excercise</button>
+          <button id="submit" class="btn btn-primary float left">TV Binge Watching</button>
+          <button id="submit" class="btn btn-primary float left">Misc Challenge</button>
         </form>
-        {{!-- Facebook  Begins --}}
-<fb:login-button 
-  scope="public_profile,email"
-  onlogin="checkLoginState();">
+        
+       <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Your Challenge Data Here"></textarea>
+       
+        <br/>
+         <h4> Competitor's Score Book: </h4>
+        <ul id="example-list" class="list-group">
+          {{#each examples}}
+          <li data-id="{{this.id}}" class="list-group-item">
+            <a href="example/{{this.id}}">{{this.text}}</a>
+            <button class="btn btn-danger float-right delete">ｘ</button>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    {{!-- Facebook  Begins --}}
+<fb:login-button
+ scope="public_profile,email"
+ onlogin="checkLoginState();">
 </fb:login-button>
-
 <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '454198018520438',
-      cookie     : true,
-      xfbml      : true,
-      version    : 'v4.0'
-    });
-      
-    FB.AppEvents.logPageView();   
-      
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
+ window.fbAsyncInit = function() {
+   FB.init({
+     appId      : '454198018520438',
+     cookie     : true,
+     xfbml      : true,
+     version    : 'v4.0'
+   });
+   FB.AppEvents.logPageView();
+ };
+ (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
 </script>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=454198018520438&autoLogAppEvents=1"></script>
-<div class="fb-like" data-href="https://barbiedollxo.github.io/Project2/" data-width="200" data-layout="box_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>      
-      {{!-- End Facebook Stuff --}}
-      
-      
-      </div>
-    </div>
+<div class="fb-like" data-href="https://barbiedollxo.github.io/Project2/" data-width="200" data-layout="box_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+     {{!-- End Facebook Stuff --}}
   </div>
 </div>
 
