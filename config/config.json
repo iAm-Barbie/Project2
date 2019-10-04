@@ -1,14 +1,20 @@
 {
   "development": {
     "username": "root",
+<<<<<<< HEAD
     "password": "",
     "database": "nodejs_login",
     "host": "127.0.0.1",
+=======
+    "password": "root",
+    "database": "exampledb",
+    "host": "localhost",
+>>>>>>> 645023db1f0f37a0231dffe5091fb8722c81b14c
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": null,
+    "password": "root",
     "database": "testdb",
     "host": "localhost",
     "dialect": "mysql",
