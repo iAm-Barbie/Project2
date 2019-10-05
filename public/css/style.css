@@ -1,10 +1,10 @@
 body {
-  background-color: brown;
+  background-color: rgb(155, 208, 243);
   }
-  img { 
+  /* img { 
    width: 100%;
    height: auto;
-  }
+  } */
   
   .list-group-item {
       line-height: 4.0;
@@ -26,4 +26,15 @@ body {
     margin-top: 50px;
   }
 
+#container {
+  background-color: rgb(155, 208, 243);
+}
 
+.col-md-6 {
+  background-color: lightsalmon;
+}
+
+img {
+  width: 50%;
+  height: auto;
+}
