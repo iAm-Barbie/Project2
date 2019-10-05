@@ -26,13 +26,11 @@
         <ul id="example-list" class="list-group">
           {{#each examples}}
           <li data-id="{{this.id}}" class="list-group-item">
-            <a href="example/{{this.id}}">{{this.text}}</a>
+            <a href="example/{{this.id}}">{{this.text}}:  {{this.description}}</a>
             <button class="btn btn-danger float-right delete">ｘ</button>
           </li>
           {{/each}}
         </ul>
-      </div>
-    </div>
     {{!-- Facebook  Begins --}}
 <fb:login-button
  scope="public_profile,email"
@@ -58,7 +56,10 @@
 </script>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=454198018520438&autoLogAppEvents=1"></script>
-<div class="fb-like" data-href="https://barbiedollxo.github.io/Project2/" data-width="" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>     {{!-- End Facebook Stuff --}}
+<div class="fb-like" data-href="https://barbiedollxo.github.io/Project2/" data-width="" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>     
+ {{!-- Facebook --}}
+ </div>
+    </div>
   </div>
 </div>
 
