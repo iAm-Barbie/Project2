@@ -11,7 +11,32 @@
             <strong>Text</strong>: {{example.text}}</p>
           <p>
             <strong>Description:</strong> {{example.description}}</p>
-            <a href="/">← Back To Home</a>
+            <a href="/home">← Back To Home</a>
+
+            <br>
+       {{!-- Facebook Start --}}
+<script>
+ window.fbAsyncInit = function() {
+   FB.init({
+     appId      : '454198018520438',
+     cookie     : true,
+     xfbml      : true,
+     version    : 'v4.0'
+   });
+   FB.AppEvents.logPageView();
+ };
+ (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=454198018520438&autoLogAppEvents=1"></script>
+<div class="fb-like" data-href="https://barbiedollxo.github.io/Project2/" data-width="" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>     
+{{!-- Facebook End --}}
         </div>
       </div>
     </div>
