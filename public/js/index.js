@@ -1,9 +1,9 @@
 // Get references to page elements
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
+var $exampleTime = $("#example-time");
 var $submitBtn = $("#submit");
 var $exampleList = $("#example-list");
-
 // The API object contains methods for each kind of request we'll make
 var API = {
   saveExample: function(example) {
@@ -66,10 +66,11 @@ var handleFormSubmit = function(event) {
 
   var example = {
     text: $exampleText.val().trim(),
-    description: $exampleDescription.val().trim()
+    description: $exampleDescription.val().trim(),
+    time: $exampleTime.val().trim(),
   };
 
-  if (!(example.text && example.description)) {
+  if (!(example.text && example.description && example.time)) {
     alert("You must enter an example text and description!");
     return;
   }
@@ -80,6 +81,7 @@ var handleFormSubmit = function(event) {
 
   $exampleText.val("");
   $exampleDescription.val("");
+  $exampletime.val("");
 };
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
