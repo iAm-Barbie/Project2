@@ -7,32 +7,27 @@
         <form class="clearfix mb-4" action="POST">
           <div class="form-group">
             <label for="example-text">Competitor's Name</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter User Name">
+            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter The Name Of Who You Wish To Challenge!">
           </div>
           <div class="form-group">
             <label for="example-description"><h2>Choose Your Challenge</h2></label>
-            
-          </div>
-          <button id="submit" class="btn btn-primary">Gaming</button>
-          <button id="submit" class="btn btn-primary ">Excercise</button>
-          <button id="submit" class="btn btn-primary ">TV Binge Watching</button>
-          <button id="submit" class="btn btn-primary ">Misc Challenge</button>
-        </form>
-        
+         
        <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Your Challenge Data Here"></textarea>
-       
+       <textarea class="form-control" id="example-time" aria-describedby="example-time" placeholder="Enter A Time To Complete By"></textarea>
+      <button id="submit" class="btn btn-primary">Challenge!!</button>
+          </div>
+        </form>
+
         <br/>
          <h4> Competitor's Score Book: </h4>
         <ul id="example-list" class="list-group">
           {{#each examples}}
           <li data-id="{{this.id}}" class="list-group-item">
-            <a href="example/{{this.id}}">{{this.text}}</a>
+            <a href="example/{{this.id}}">{{this.text}}:  {{this.description}}</a>
             <button class="btn btn-danger float-right delete">ｘ</button>
           </li>
           {{/each}}
         </ul>
-      </div>
-    </div>
     {{!-- Facebook  Begins --}}
 <fb:login-button
  scope="public_profile,email"
@@ -58,7 +53,10 @@
 </script>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=454198018520438&autoLogAppEvents=1"></script>
-<div class="fb-like" data-href="https://barbiedollxo.github.io/Project2/" data-width="" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>     {{!-- End Facebook Stuff --}}
+<div class="fb-like" data-href="https://barbiedollxo.github.io/Project2/" data-width="" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>     
+ {{!-- Facebook --}}
+ </div>
+    </div>
   </div>
 </div>
 
