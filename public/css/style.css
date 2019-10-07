@@ -32,18 +32,13 @@ body {
 }
 
 img {
-  width: 300pt;
+  width: 175pt;
   height: auto;
   margin-bottom: 50px;
+margin-left: 250px;
 }
 .btn {
   background-color: blue;
   color: bisque;
 }
 
-.pic {
-width: 300pt;
-height: auto;
-float: unset;
-
-}
